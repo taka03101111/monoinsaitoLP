@@ -1,0 +1,18 @@
+{
+  "screenshots": {
+    "intro-01-0.png": "manual-library.webp",
+    "intro-01-2.png": "manual-tablet.webp",
+    "intro-04-0.png": "manual-player.webp",
+    "intro-05-0.png": "kaizen-record.webp",
+    "trial-08-1.png": "manual-upload.webp",
+    "trial-09-1.png": "manual-trimming.webp",
+    "trial-10-1.png": "manual-preview.webp",
+    "trial-11-1.png": "manual-status.webp",
+    "trial-12-1.png": "manual-edit.webp"
+  },
+  "sources": [
+    "monoインサイト_ご紹介資料.pdf",
+    "monoインサイト_無料トライアルご案内.pdf"
+  ],
+  "note": "提供資料から画像を抽出し、WebP形式に変換。画像内容の生成・改変なし。"
+}

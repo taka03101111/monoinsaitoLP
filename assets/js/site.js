@@ -1,0 +1,11 @@
+'use strict';
+const navToggle=document.querySelector('.menu-toggle');
+const mobileNav=document.querySelector('.mobile-nav');
+navToggle?.addEventListener('click',()=>{const expanded=navToggle.getAttribute('aria-expanded')==='true';navToggle.setAttribute('aria-expanded',String(!expanded));mobileNav.hidden=expanded;});
+mobileNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;navToggle.setAttribute('aria-expanded','false');}));
+const featureButton=document.querySelector('.feature-nav>button');
+const featureMenu=document.querySelector('.feature-menu');
+featureButton?.addEventListener('click',()=>{const expanded=featureButton.getAttribute('aria-expanded')==='true';featureButton.setAttribute('aria-expanded',String(!expanded));featureMenu.hidden=expanded;});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(mobileNav&&!mobileNav.hidden){mobileNav.hidden=true;navToggle.setAttribute('aria-expanded','false');navToggle.focus();}if(featureMenu&&!featureMenu.hidden){featureMenu.hidden=true;featureButton.setAttribute('aria-expanded','false');featureButton.focus();}}});
+document.addEventListener('click',e=>{if(featureMenu&&!e.target.closest('.feature-nav')){featureMenu.hidden=true;featureButton.setAttribute('aria-expanded','false');}});
+document.querySelectorAll('.faq-item button').forEach(button=>button.addEventListener('click',()=>{const expanded=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=expanded;}));
