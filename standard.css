@@ -1,0 +1,44 @@
+/* Explain the document through the source screen and a legible output example. */
+.standard-heading{max-width:980px;margin-bottom:45px}
+.standard-heading h2{font-size:42px;line-height:1.6;margin:0 0 23px}
+.standard-heading>p{font-size:17px!important;line-height:2!important;color:var(--ink)}
+.standard-heading strong{font-weight:700}
+.standard-journey{display:grid;grid-template-columns:minmax(0,.9fr) 42px minmax(0,1.25fr);gap:22px;align-items:stretch}
+.standard-stage-title{display:flex;align-items:baseline;gap:13px;margin-bottom:21px}
+.standard-stage-title>span{font-size:17px;font-weight:700;color:#bf400f;font-variant-numeric:tabular-nums}
+.standard-stage-title h3{font-size:23px;line-height:1.6;letter-spacing:-.03em}
+.standard-source{min-width:0}
+.standard-source>img{display:block;width:100%;height:calc(100% - 55px);max-height:490px;object-fit:cover;object-position:top center;border:1px solid #d6dfe5;border-radius:6px;box-shadow:0 8px 25px #172a3309}
+.standard-source>p{font-size:17px;color:var(--ink);line-height:1.9;margin-top:22px}
+.standard-direction{align-self:center;font-size:36px;color:var(--orange);text-align:center}
+.standard-result{min-width:0;display:flex;flex-direction:column}
+.standard-result .standard-stage-title{flex:none}
+.standard-result .standard-sheet{flex:1}
+.standard-sheet{background:#fff;border:1px solid #cbd7e3;border-top:5px solid #2457b8;border-radius:4px;padding:25px 27px 22px;box-shadow:0 10px 35px #172a3310}
+.standard-sheet-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.standard-sheet-title p{font-size:15px;font-weight:700;color:#27549d;margin:0 0 5px}
+.standard-sheet-title h4{font-size:25px;margin:0;line-height:1.5}
+.sheet-example{font-size:14px;color:#3f515a;white-space:nowrap}
+.standard-sheet-meta{font-size:14px;color:#3f515a;margin:14px 0 21px}
+.standard-result-rows{padding:0;margin:0;list-style:none;border-top:1px solid #d7e0e8}
+.standard-result-rows>li{border-bottom:1px solid #d7e0e8;padding:19px 0}
+.standard-row-title{display:grid;grid-template-columns:25px 1fr 37px;gap:10px;align-items:baseline}
+.standard-row-title>span{font-size:15px;color:#2457b8;font-weight:700}
+.standard-row-title h5{font-size:18px;font-weight:700;line-height:1.7;margin:0}
+.standard-row-title time{font-size:14px;color:#3f515a;text-align:right;font-variant-numeric:tabular-nums}
+.standard-point{display:flex;align-items:baseline;gap:12px;font-size:16px;line-height:1.85;padding:10px 13px;margin:11px 0 0 35px;border-radius:3px}
+.standard-point b{font-size:14px;font-weight:700;flex-shrink:0}
+.point-safety{background:#fff4e6;color:#7d430d}.point-quality{background:#edf3ff;color:#244d8b}.point-technique{background:#edf6ef;color:#285c3a}
+.standard-sheet-note{font-size:14px;color:#3f515a;line-height:1.9;margin-top:19px}
+.standard-explanation{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:45px;padding-top:30px;border-top:1px solid var(--line)}
+.standard-explanation>div+div{border-left:1px solid var(--line);padding-left:30px}
+.point-key{font-size:16px;font-weight:700;display:inline-block;padding:3px 11px;margin-bottom:13px;border-radius:3px}
+.key-quality{background:#edf3ff;color:#244d8b}.key-safety{background:#fff4e6;color:#7d430d}.key-technique{background:#edf6ef;color:#285c3a}
+.standard-explanation h3{font-size:21px;line-height:1.7;margin:0 0 10px}
+.standard-explanation p{font-size:16px;line-height:1.9;color:var(--ink)}
+.standard-outcome{background:var(--cream);padding:28px 32px;margin-top:35px;border-left:3px solid var(--orange)}
+.standard-outcome .standard-stage-title{margin-bottom:10px}
+.standard-outcome p{font-size:16px!important;line-height:1.9!important;color:var(--ink)}
+@media(max-width:1100px){.standard-journey{grid-template-columns:minmax(0,.82fr) 28px minmax(0,1.2fr);gap:18px}.standard-stage-title h3{font-size:20px}.standard-sheet{padding:23px 20px}.standard-row-title{grid-template-columns:22px 1fr 35px;gap:8px}.standard-row-title h5{font-size:17px}.standard-point{margin-left:0;gap:9px;flex-wrap:wrap}.standard-explanation{gap:25px}.standard-explanation>div+div{padding-left:24px}.standard-explanation h3{font-size:20px}}
+@media(max-width:850px){.standard-journey{grid-template-columns:1fr;gap:20px}.standard-source>img{max-width:640px}.standard-source>p br{display:none}.standard-direction{margin:0;line-height:1;transform:rotate(90deg);font-size:32px}.standard-stage-title h3{font-size:23px}.standard-row-title h5{font-size:19px}.standard-point{margin-left:32px;flex-wrap:nowrap}.standard-sheet{padding:26px 30px}.standard-explanation{gap:24px}.standard-explanation h3{font-size:19px}.standard-explanation>div+div{padding-left:20px}}
+@media(max-width:600px){.standard-heading{margin-bottom:32px}.standard-heading h2{font-size:31px;line-height:1.65;margin-bottom:20px}.standard-heading>p{font-size:16px!important;line-height:1.95!important}.standard-stage-title{gap:11px;margin-bottom:17px}.standard-stage-title h3{font-size:21px}.standard-source>p{font-size:16px;margin-top:17px}.standard-sheet{padding:22px 18px}.standard-sheet-title{align-items:flex-start}.standard-sheet-title h4{font-size:24px}.standard-sheet-title p{font-size:14px}.standard-sheet-meta{font-size:14px;line-height:1.8;margin-top:12px}.sheet-example{font-size:14px}.standard-result-rows>li{padding:18px 0}.standard-row-title{grid-template-columns:23px 1fr 33px;gap:7px}.standard-row-title h5{font-size:17px}.standard-point{margin-left:0;display:block;padding:11px 12px;font-size:16px}.standard-point b{display:block;margin-bottom:3px;font-size:14px}.standard-sheet-note{font-size:14px}.standard-explanation{grid-template-columns:1fr;margin-top:32px;padding-top:25px;gap:22px}.standard-explanation>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:22px}.point-key{margin-bottom:11px}.standard-explanation h3{font-size:22px;margin-bottom:8px}.standard-explanation p{font-size:16px}.standard-outcome{padding:23px 20px;margin-top:28px}.standard-outcome .standard-stage-title{align-items:flex-start}.standard-outcome h3{font-size:21px}.standard-outcome p{font-size:16px!important}}
