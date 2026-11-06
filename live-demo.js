@@ -6,6 +6,13 @@
   const origin = window.location.origin;
   const send = type => frame.contentWindow?.postMessage({ type }, origin);
   const moveToWorkspace = () => workspace.scrollIntoView({ behavior: "auto", block: "start" });
+  function updateResumeAction() {
+    intro.classList.add("has-active-demo");
+    $("#demoResumeBadge").hidden = false;
+    $("#demoResumeBadge").textContent = latestState?.processing ? "AI解析を続けています" : "前回開いたデモに戻れます";
+    $("#demoActionLabel").textContent = latestState?.processing ? "解析の進み具合を確認する" : "作成・編集の続きを開く";
+    $("#demoActionHint").textContent = "このページを開いている間、入力・編集内容は保持されます。";
+  }
   function showError() {
     $("#liveDemoLoading").hidden = true;
     $("#liveDemoError").hidden = false;
@@ -43,7 +50,7 @@
     document.body.classList.remove("live-demo-active");
     intro.hidden = false;
     $("#openLiveDemo").setAttribute("aria-expanded", "false");
-    $("#openLiveDemo").textContent = "デモの続きを開く →";
+    updateResumeAction();
     $("#openLiveSample").hidden = true;
     $(".live-demo-small").textContent = latestState?.processing ? "解析を続けています。ページを閉じずにお待ちください。" : "入力・編集内容はデモ画面に保持されています。";
     (opening?.hidden ? $("#openLiveDemo") : opening || $("#openLiveDemo")).focus({ preventScroll: true });
@@ -61,6 +68,8 @@
       if (!workspace.hidden) frame.focus();
     }
     latestState = message;
+    if (workspace.hidden && started) updateResumeAction();
+    $("#demoNextAction").hidden = !message.resultReady;
     $("#liveDemoState").textContent = message.processing ? "AI解析中" : message.dirty ? "編集中・未保存" : "操作できます";
     if (workspace.hidden && message.processing) $(".live-demo-small").textContent = "解析を続けています。ページを閉じずにお待ちください。";
     else if (workspace.hidden) $(".live-demo-small").textContent = "デモの続きを開けます。編集後は「変更を保存」を押してください。";
