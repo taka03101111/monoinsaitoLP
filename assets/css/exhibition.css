@@ -1,0 +1,103 @@
+/* White-led LP: original brand blue with exhibition-inspired yellow accents. */
+:root{--lp-ink:#111827;--lp-gray:#f3f4f6;--lp-amber:#fbbf24;--lp-amber-dark:#92400e}
+body{font-size:17px;line-height:1.85;line-break:strict}
+body p,body li,body td{font-size:17px;line-height:1.85}
+body h2,body .section-heading h2,body .cycle-copy h2,body .origin-copy h2,body .comparison-section h2,body .final-cta h2,body .standard-heading h2{font-size:clamp(28px,2.6vw,36px);line-height:1.5;letter-spacing:.015em;text-wrap:balance}
+body h3,body .craft-features h3,body .live-demo-copy h3,body .usecase-grid h3,body .origin-copy h3{font-size:24px;line-height:1.55;text-wrap:balance}
+body .orange{color:var(--mi-brand-text);text-decoration:underline;text-decoration-color:var(--lp-amber);text-decoration-thickness:3px;text-underline-offset:7px}
+body .hero.section-wrap{max-width:none;background:#fff;padding:72px max(32px,calc((100% - 1376px)/2));gap:48px;grid-template-columns:minmax(350px,.82fr) minmax(0,1.18fr)}
+body .hero h1{font-size:clamp(44px,4.2vw,60px);line-height:1.32;color:var(--lp-ink)}
+body .hero h1 .orange{color:var(--mi-brand-text);text-decoration:underline;text-decoration-color:var(--lp-amber);text-decoration-thickness:4px;text-underline-offset:10px}
+body .hero .hero-lead{font-size:16px;color:#4b5563;font-weight:500;line-height:1.9}
+body .hero .hero-description{font-size:19px;line-height:1.9;color:var(--lp-ink);font-weight:500}
+.hero-film:before{background:var(--mi-brand-tint)}.hero-film:after{border-color:#f3cb65}
+.hero .film-flow,.hero .film-flow span:last-child{color:#6b7280;font-size:14px}.hero .film-flow i{background:#6b7280}
+body .button,body .action,body .live-demo-copy .demo-primary-action{background:var(--mi-brand);border-color:var(--mi-brand);color:#fff;font-size:16px;line-height:1.65;padding:16px 24px}
+body .button:hover,body .action:hover,body .live-demo-copy .demo-primary-action:hover{background:var(--mi-brand-hover);border-color:var(--mi-brand-hover);color:#fff}
+body .final-cta .button.dark{background:var(--lp-amber);border-color:var(--lp-amber);color:var(--lp-ink);font-weight:700}
+body .final-cta .button.dark:hover{background:#fcd34d;border-color:#fcd34d;color:var(--lp-ink)}
+body .text-link,body .demo-link,body .header-link,body .success-links a,body .next-block>a{font-size:16px;color:var(--mi-brand-text)}
+body .hero .text-link,body .hero .demo-link{color:var(--mi-brand-text);border-color:#bfdbfe}
+.hero .play-small{color:var(--mi-brand);border-color:var(--mi-brand)}
+body .header nav .button{background:#fff;border-color:#9ca3af;color:var(--lp-ink);font-size:14px;padding:12px 16px;white-space:nowrap}
+.header nav>a{white-space:nowrap}.header nav{gap:20px}
+body .how-section,body .comparison-section{background:#fff}
+body .cycle-section,body .improvement-section,body .faq-section,body .usecases{background:#fff;border-top:1px solid #e5e7eb}
+body .trust-strip{background:#fff}
+body .section-eyebrow,body .live-demo-eyebrow{font-size:14px;color:var(--mi-brand-text);letter-spacing:.1em}
+body .pain-question>span,body .feature-num,body .difference-grid>div>span,body .usecase-grid article>span,body .trial-flow li>span,body .company-awards>span{font-size:16px;color:var(--mi-brand-text)!important}
+body .pain-answer h4{font-size:24px;line-height:1.55;text-wrap:balance}
+body .tag,body .comparison-badges span,body .live-demo-tags span{background:var(--mi-brand-tint);color:var(--mi-brand-text);font-size:14px;line-height:1.7}
+body .pain-context,body .cycle-copy>p:not(.section-eyebrow),body .live-demo-copy>p,body .improvement-intro,body .analysis-panel>p,body .origin-copy>p,body .faq-list details p{font-size:17px;line-height:1.85}
+body .trust-grid p{font-size:17px}.trust-grid small,.company-facts small{font-size:14px;line-height:1.7}
+body .trust-grid strong{font-size:48px}.trust-grid{gap:24px}
+.gear-stage{--gear:#eff6ff}.stage-2,.stage-4{--gear:#fff5cf}.stage-3,.stage-5{--gear:#eff6ff}
+.gear-stage .gear-wheel{stroke:#cbd5e1;stroke-width:.4px}.gear-center{--gear:var(--mi-brand)}
+.gear-number{color:var(--mi-brand-text)}.gear-stage.is-current .gear-number{color:var(--lp-amber-dark);text-decoration-color:var(--lp-amber)}
+body .gear-label h3{font-size:20px;line-height:1.5}.gear-label p{font-size:16px;line-height:1.7;max-width:14em}.gear-badge{font-size:14px}
+.gear-center small,.gear-center span{font-size:14px}.gear-center strong{font-size:22px}
+body .live-demo-small,body .demo-action-hint,body .live-demo-details,body .demo-resume-badge{font-size:14px;line-height:1.8}
+body .live-demo-copy .demo-primary-action .demo-action-label{font-size:20px}
+body .demo-trial-action{font-size:16px;color:var(--lp-ink)}
+.has-active-demo .demo-action-stack,.demo-next-action{background:#fffbeb;border-color:#fde68a}
+body .demo-next-action>div>span{color:var(--lp-amber-dark)}
+.standard-stage-title>span,.standard-row-title>span{background:var(--mi-brand-tint);color:var(--mi-brand-text)}
+.standard-outcome{background:#fffbeb;border-color:#fde68a}
+.standard-sheet-title p,.standard-sheet small,.standard-sheet li p,.standard-point p{font-size:15px!important;line-height:1.8}
+.classification-panel,.analysis-panel{padding:28px}.category,.classification-examples small,.classification-legend,.cycle-chart>div{font-size:14px;line-height:1.6}
+.waste{--category:#f59e0b}.category.waste{background:#f59e0b;color:#111827}
+body .analysis-panel .analysis-insight{font-size:15px;background:#fff;color:var(--lp-ink)}
+.status.available,.status.developing{font-size:14px}
+body .comparison-table .mono-column,body .comparison-table thead .mono-column{background:#fffbeb;border-color:#d6b66a;color:var(--lp-ink)}
+body .comparison-table td,body .comparison-table th{font-size:16px;line-height:1.8}
+.comparison-table th:first-child{white-space:nowrap}.comparison-logo{max-width:100%;height:auto;max-height:36px}
+body .pricing-grid>div>p:not(.eyebrow){font-size:17px;line-height:1.85}
+body .price-detail .price-label,body .price-detail .price-note{font-size:15px!important;line-height:1.85!important}
+body .price>span{font-size:56px}.price-tags>span{font-size:15px}
+body .final-cta{background:#fff;border-color:#e5e7eb}
+body .final-cta h2,body .final-cta p,body .final-cta .cta-small{color:var(--lp-ink)}
+body .final-cta .button.white{background:#fff;color:var(--lp-ink);border-color:#9ca3af;font-size:16px}
+body .final-cta .button.white:hover{background:#f3f4f6;color:var(--lp-ink)}
+body .footer-bottom,body .footer-copy,body .fineprint,body .form-footnote,body .required-note{font-size:14px;line-height:1.8}
+body .footer-main>div>p,body .footer-main>div>strong{font-size:16px}
+body .company-facts li,body .company-awards p{font-size:16px;line-height:1.8}
+body .field label,body .topic,body .consent,body .required-note,body .topic>span{font-size:16px;line-height:1.8}
+body .field input,body .field textarea,body .field select{font-size:17px!important}
+body .trial-info,body .form-status,body .guide-badge{background:var(--mi-brand-tint);color:var(--mi-brand-text)}
+body .form-side .index-number,body .guide-contents span{color:var(--lp-amber-dark)}
+body .form-hero h1{font-size:clamp(32px,3.6vw,44px);line-height:1.5;text-wrap:balance}
+body .intro-block h2,body .contact-intro h2{font-size:28px;line-height:1.5}
+body .form-hero p,body .intro-block p,body .contact-intro p,body .form-side p,body .success-detail p{font-size:17px;line-height:1.85}
+body .section-heading.live-demo-heading>p{font-size:17px!important;line-height:1.85!important}
+body .factory-editorial small,body .comparison-table small{font-size:14px;line-height:1.7}
+body .mobile-cta a{white-space:nowrap}
+body .github-preview-notice{background:#f3f4f6;color:#374151}
+@media(max-width:640px){body .topic-grid{grid-template-columns:1fr;gap:12px}body .topic>span{min-height:64px;padding:16px 16px 16px 44px}body .contact-intro p br,body .intro-block p br,body .form-side p br{display:none}}
+@media(min-width:901px) and (max-width:1180px){.header{flex-wrap:wrap;gap:12px;padding-block:16px}.header nav{width:100%;justify-content:space-between;gap:12px}.header nav>a{font-size:14px}body .hero.section-wrap{grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr);gap:32px}body .hero h1{font-size:44px}}
+@media(max-width:900px){body .hero.section-wrap{grid-template-columns:1fr;padding:40px 24px 48px;gap:24px}.hero-copy{max-width:640px}body .hero h1{font-size:44px}.hero-film{max-width:800px}.header nav>a{font-size:16px}body .hero .hero-description br{display:none}}
+@media(max-width:760px){body p,body li,body td{font-size:16px}body h2,body .section-heading h2,body .cycle-copy h2,body .origin-copy h2,body .comparison-section h2,body .final-cta h2,body .standard-heading h2{font-size:28px;line-height:1.5}body h3,body .craft-features h3,body .live-demo-copy h3,body .usecase-grid h3,body .origin-copy h3{font-size:22px}.hero h1 br:last-of-type{display:initial}body .hero h1{font-size:38px;line-height:1.4}body .hero .hero-lead{font-size:15px}body .hero .hero-description{font-size:18px}.hero-actions{gap:16px}.hero-film:before{background:var(--mi-brand-tint)}body .section-heading p br,body .trial-flow p br,body .origin-copy p br{display:none}.gear-label p{font-size:16px}.gear-center{background:var(--mi-brand)}.gear-stage{padding:24px 20px 24px 64px}.gear-label{max-width:100%}body .gear-label h3{font-size:20px}.gear-return{font-size:15px}body .mobile-cta a,body .mobile-cta a+a{font-size:14px!important;padding:12px 8px}.mobile-cta{gap:8px}body .form-header .header-link{font-size:14px}.form-header .brand img{height:26px}body .button,body .action{font-size:16px;padding:16px 20px}.comparison-table{min-width:760px}.comparison-table td{font-size:16px}.trust-grid{gap:24px}.trust-grid p{font-size:16px}.standard-sheet li p{font-size:15px!important}.form-layout{gap:28px}}
+@media(max-width:380px){body .hero h1{font-size:34px}body .section-wrap{padding-inline:20px}.header,.form-header{padding-inline:20px}.header .brand img{height:28px}.form-header{flex-wrap:wrap;height:auto;min-height:80px;padding-block:14px;gap:12px}body .form-header .header-link{font-size:14px}}
+
+/* White surfaces; accent colors belong to text, controls and diagrams. */
+body .origin-awaiting{background:#f7f7f5!important;border:1px solid #e5e7eb}
+body .factory-editorial strong,body .factory-editorial small,body .factory-label{color:#374151}
+body .factory-year{color:#111827;opacity:.06}
+body .hero{border-bottom:1px solid #e5e7eb}
+
+/* Keep white page surfaces; use color inside diagrams and compact accents. */
+body .trust-grid strong,body .price>span{color:var(--mi-brand-text)}
+body .trust-grid>div:nth-child(2) strong{text-decoration:underline;text-decoration-color:var(--lp-amber);text-decoration-thickness:4px;text-underline-offset:8px}
+body .section-eyebrow:before,body .live-demo-eyebrow:before{content:"";display:inline-block;width:8px;height:8px;margin-right:10px;border-radius:50%;background:var(--lp-amber)}
+body .pain-question>span,body .feature-num,body .trial-flow li>span{display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:36px;padding:2px 8px;border-radius:6px;background:#eff6ff}
+body .pain-row:nth-child(even) .pain-question>span,body .craft-features article:nth-child(2) .feature-num,body .trial-flow li:nth-child(even)>span{background:#fff3c4;color:#854d0e!important}
+body .standard-stage-title>span,body .standard-row-title>span{background:#eff6ff;color:var(--mi-brand-text)}
+body .standard-outcome{border-left:4px solid var(--lp-amber)}
+body .analysis-panel .analysis-insight{background:#eff6ff;color:var(--mi-brand-text)}
+body .comparison-table thead .mono-column{border-top:4px solid var(--lp-amber)}
+body .comparison-badges span:nth-child(2){background:#fff0b5;color:#854d0e}
+body .live-demo-intro{border-top:3px solid var(--mi-brand)}
+body .final-cta{border-top:4px solid var(--lp-amber)}
+body .final-cta .button.white{color:var(--mi-brand-text);border-color:var(--mi-brand)}
+body .mobile-cta a:first-child{color:var(--mi-brand-text);border-color:#bfdbfe;background:#eff6ff}
+body .mobile-cta a+a{background:var(--lp-amber);border-color:var(--lp-amber);color:var(--lp-ink)}
+body .form-side .index-number,body .guide-contents span{color:var(--mi-brand-text)}
