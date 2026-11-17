@@ -1,0 +1,54 @@
+/* monoインサイト デザイントークン v0.2（2026-11-13）
+ * 【確定】と記したものはロゴと共通の色で、変更不可。
+ * 【暫定】はアプリ画面からの推定値。今後コード照合で微修正する可能性があります。
+ * 使い方：<link rel="stylesheet" href="/assets/css/mono-tokens.css"> を読み込み、var(--mi-brand) のように参照してください。 */
+
+:root {
+  --mi-brand: #1D4ED8; /* 【確定】ブランドの主色（インサイト・ブルー） */
+  --mi-brand-hover: #1E40AF; /* 【暫定】brand を使った主要ボタンのホバー・押下時 */
+  --mi-brand-text: #1D4ED8; /* 【暫定】surface 上のリンク、強調テキスト */
+  --mi-brand-tint: #EFF6FF; /* 【暫定】brand の薄い面 */
+  --mi-on-brand: #FFFFFF; /* 【確定】brand・sidebar 上の文字とアイコン */
+  --mi-spark: #F59E0B; /* 【確定】インサイトの点 */
+  --mi-spark-text: #B45309; /* 【暫定】spark 系の意味を文字で示す必要があるとき（例：「AI提案」ラベル） */
+  --mi-ink: #111827; /* 【暫定】本文・見出しの文字色 */
+  --mi-ink-muted: #6B7280; /* 【暫定】補足テキスト、時刻、単位（「件」） */
+  --mi-surface: #FFFFFF; /* 【暫定】ページとカードの基本背景 */
+  --mi-surface-subtle: #F9FAFB; /* 【暫定】一段沈めた面 */
+  --mi-border: #E5E7EB; /* 【暫定】カードの区切り、リストの罫線 */
+  --mi-border-control: #8A929E; /* 【暫定】入力欄・セカンダリボタンの輪郭 */
+  --mi-sidebar: #1F2937; /* 【暫定】アプリ左のサイドメニュー背景 */
+  --mi-sidebar-ink: #D1D5DB; /* 【暫定】sidebar 上の非選択アイコン・文字 */
+  --mi-success: #047857; /* 【暫定】完了・有効の文字とアイコン（例：owner バッジ、受講完了） */
+  --mi-success-tint: #ECFDF5; /* 【暫定】success のバッジ・通知の背景 */
+  --mi-danger: #DC2626; /* 【暫定】削除・エラーだけに使う */
+  --mi-focus: #2563EB; /* 【暫定】キーボードフォーカスのリング（2px＋2pxのオフセット） */
+
+  --mi-font-sans: "Noto Sans JP", "Hiragino Sans", "Meiryo UI", Meiryo, system-ui, sans-serif;
+  --mi-font-brand: Outfit, "Noto Sans JP", system-ui, sans-serif; /* ロゴの「mono」とKPIの数字専用 */
+  --mi-space-1: 4px;
+  --mi-space-2: 8px;
+  --mi-space-3: 12px;
+  --mi-space-4: 16px;
+  --mi-space-6: 24px;
+  --mi-space-8: 32px;
+  --mi-space-12: 48px;
+  --mi-space-16: 64px;
+  --mi-radius-sm: 6px;
+  --mi-radius-md: 8px;
+  --mi-radius-lg: 12px;
+  --mi-radius-icon: 22%;
+  --mi-radius-full: 9999px;
+  --mi-shadow-pop: 0 8px 24px rgba(17,24,39,0.12);
+}
+
+/* LPはライトテーマで統一。任意のダークモード定義のみ省略。元ファイルはreferencesに保管。 */
+/* 文字スタイル（LP） */
+.mi-display { font: 700 44px/1.35 var(--mi-font-sans); letter-spacing: 0.01em; }
+@media (max-width: 640px) { .mi-display { font-size: 30px; } }
+.mi-lead { font: 400 18px/1.8 var(--mi-font-sans); }
+.mi-h2 { font: 700 20px/1.4 var(--mi-font-sans); }
+.mi-body { font: 400 15px/1.7 var(--mi-font-sans); }
+.mi-label { font: 500 14px/1.5 var(--mi-font-sans); }
+.mi-caption { font: 400 12px/1.5 var(--mi-font-sans); color: var(--mi-ink-muted); }
+.mi-kpi { font: 700 40px/1 var(--mi-font-brand); }

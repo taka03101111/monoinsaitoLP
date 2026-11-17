@@ -1,0 +1,19 @@
+Options -Indexes
+DirectoryIndex index.html
+RewriteEngine On
+# Enable after SSL is issued. Preserve query strings (printed QR / UTM attribution).
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^monoinsights\.jp$ [NC]
+RewriteRule ^ https://monoinsights.jp%{REQUEST_URI} [R=301,L,NE]
+RewriteRule ^(?:index\.html)$ / [R=301,L]
+RewriteRule ^(contact|download)\.html$ /$1/ [R=301,L]
+RewriteRule ^(contact|download)$ /$1/ [R=301,L]
+RewriteRule ^(contact|download)/thanks$ /$1/thanks/ [R=301,L]
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "same-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+<FilesMatch "(^\.|\.(sqlite|db|log|bak|env|ini)$)">
+Require all denied
+</FilesMatch>
