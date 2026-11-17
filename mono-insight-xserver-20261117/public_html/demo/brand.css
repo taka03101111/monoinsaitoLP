@@ -1,5 +1,0 @@
-:root{--ink:var(--mi-ink);--muted:var(--mi-ink-muted);--line:var(--mi-border);--soft:var(--mi-surface-subtle);--orange:var(--mi-brand);--orange-dark:var(--mi-brand-hover);--orange-pale:var(--mi-brand-tint);--green:var(--mi-success);font-family:var(--mi-font-sans)}
-.app-sidebar{background:var(--mi-sidebar)}.app-brand .brand-tile{padding:0;background:transparent;border-radius:0;display:grid;place-items:center}.brand-tile img{width:48px;height:48px;object-fit:contain}
-.footer-brand img{width:auto;height:32px}.app-sidebar nav button{color:var(--mi-sidebar-ink)}.app-sidebar nav button.active{background:var(--mi-brand);color:var(--mi-on-brand)}
-.primary-button{background:var(--mi-brand);color:var(--mi-on-brand)}.primary-button:hover{background:var(--mi-brand-hover)}.secondary-button{border-color:var(--mi-border-control)}
-button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--mi-focus);outline-offset:2px}
