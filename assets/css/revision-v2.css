@@ -55,9 +55,13 @@ body .price small{font-size:16px;color:#111827;margin:0}
 body .footer-main>div>p,body .footer-main>div>strong,body .footer-links a,body .footer nav a,body .footer p,body .phone-panel p,body .phone-panel a,body .success-detail p,body .success-links a{color:#111827;font-size:16px}
 body .footer-main{padding-bottom:40px}
 body .field input,body .field textarea,body .field select{font-size:16px!important}
-body .field input::placeholder,body .field textarea::placeholder{color:#111827;opacity:1}
+body .field input,body .field textarea,body .field select{color:#111827}
+body .field input::placeholder,body .field textarea::placeholder{color:#6b7280;opacity:1}
+body .field select:invalid,body .field select option[value=""]{color:#6b7280}
+body .field select option{color:#111827}
 body .field label,body .consent,body .required-note,body .form-hero p,body .form-side p,body .intro-block p,body .contact-intro p,body .trial-info p{font-size:16px;color:#111827;line-height:1.8}
 body .req,body .optional,body .guide-badge small,body .stepper li,body .review-table dt,body .review-table dd,body .receipt span,body .form-footnote{font-size:14px;color:#111827}
+body .req,body .required-note b{color:#b91c1c}
 body .guide-badge{color:#111827}
 body .button,body .action,body .text-link,body .demo-link,body .demo-trial-action,body .live-demo-sample,body .menu-toggle{font-size:16px}
 body .footer-copy,body .cta-small{font-size:14px;color:#111827}
