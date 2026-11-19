@@ -1,0 +1,76 @@
+/* Client revision A–L, 2026-11-18. White surfaces, brand blue and yellow accents. */
+body{font-size:16px;line-height:1.8}
+body p,body li,body td{font-size:16px;line-height:1.8}
+body .hero-description,body .section-heading.live-demo-heading>p,body .standard-heading>p,body .improvement-intro,body .comparison-intro{font-size:18px!important;line-height:1.8!important}
+body .hero .hero-lead,body .cycle-copy>p:not(.section-eyebrow),body .live-demo-copy>p,body .pain-context,body .origin-copy>p,body .faq-list details p,body .analysis-panel>p,body .pricing-grid>div>p:not(.eyebrow){font-size:16px;line-height:1.8;color:#111827}
+body .copy-accent{color:var(--mi-brand-text);text-decoration:underline;text-decoration-color:var(--lp-amber);text-decoration-thickness:3px;text-underline-offset:5px}
+body .header nav>a,body .header nav .button,body .saas-login,body .header-link,body .form-header .header-link{font-size:16px!important}
+body .saas-login{color:#111827!important}
+/* One desktop row; switch to the menu before the links run out of room. */
+html{scroll-padding-top:calc(var(--site-header-height,88px) + 16px)}
+body .header{height:auto;min-height:88px;padding-block:16px;flex-wrap:nowrap;gap:24px;background:#fff}
+body .header .brand img{width:clamp(190px,16vw,225px);height:auto}
+body .header nav{gap:16px;min-width:0;width:auto;flex-wrap:nowrap}
+body .header nav>a{flex-shrink:0}
+body .header nav .button{padding:12px 16px;background:var(--lp-amber);border-color:var(--lp-amber);color:var(--lp-ink)}
+body .header nav .button:hover{background:#fcd34d;border-color:#fcd34d;color:var(--lp-ink)}
+body .header nav .nav-download{background:var(--mi-brand-tint);border:1px solid #bfdbfe;border-radius:var(--mi-radius-md);color:var(--mi-brand-text);padding:12px 16px;padding-left:16px!important;line-height:1.65}
+body .header nav .nav-download:hover{background:#dbeafe;border-color:#93c5fd;color:var(--mi-brand-text)}
+body .trust-grid p{font-size:16px;color:#111827;line-height:1.8}
+body .trust-grid .adoption-status{font-family:var(--mi-font-sans);font-size:clamp(26px,2.7vw,36px);line-height:1.4;text-decoration:none;white-space:nowrap}
+body .trust-grid>div:nth-child(2){border-top:3px solid var(--lp-amber);padding-top:22px}
+body .pain-shot{background:#fff;padding:0}
+body .pain-shot img{width:100%;height:auto;max-height:none;object-fit:contain;display:block}
+body .editor-shot img{height:auto;object-fit:contain}
+body .live-demo-intro{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+body .live-demo-visual.demo-process-visual{display:block;margin:0;border:0;border-radius:0;background:transparent;overflow:visible}
+.demo-process-visual video{display:block;width:100%;height:auto;aspect-ratio:1280/720;object-fit:contain;background:#fff;border-radius:8px}
+body .demo-process-visual figcaption{font-size:14px;line-height:1.8;color:#111827;margin-top:12px}
+body .live-demo-details summary{font-size:16px;color:#111827}
+body .live-demo-tags span,body .demo-action-hint,body .demo-resume-badge,body .live-demo-small,body .live-demo-details p,body .live-demo-bottom{font-size:14px;color:#111827;line-height:1.8}
+body .live-demo-toolbar strong,body .live-demo-tag,body #liveDemoState,body .live-demo-toolbar button{font-size:14px;color:#fff}
+body .live-demo-toolbar button{font-size:16px}
+body .live-demo-copy .demo-action-label{font-size:18px;line-height:1.7}
+body .live-demo-error p,body .live-demo-loading p,body .live-demo-error a{font-size:16px}
+body .live-demo-disclosure{font-size:14px;color:#111827}
+body .standard-journey{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:20px;align-items:start}
+body .standard-source>img,body .standard-real-screen{width:100%;height:auto;max-height:none;object-fit:contain;border:1px solid #e5e7eb;border-radius:8px;display:block}
+body .standard-outcome{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:32px}
+.standard-pdf-screen{display:block;width:100%;height:auto;max-height:480px;object-fit:contain;object-position:center}
+body .standard-stage-title>span{font-size:16px;min-width:36px;min-height:32px;display:inline-grid;place-items:center;border-radius:5px}
+body .gear-badge,body .status.developing{font-size:14px;line-height:1.6;color:#1d4ed8;background:#eff6ff;border:1px solid #bfdbfe;display:inline-block;border-radius:5px;padding:4px 8px;white-space:normal}
+body .gear-label p{font-size:16px;color:#111827;line-height:1.7}
+body .gear-return,body .cycle-chart>div,body .cycle-chart>div>span{font-size:14px;color:#111827}
+body .classification-examples li{font-size:16px}
+body .classification-legend li,body .category{font-size:14px}
+body .origin-image{background:#fff;border-radius:12px;aspect-ratio:1653/930;overflow:hidden}
+body .origin-image img{width:100%;height:100%;object-fit:contain;display:block}
+body .company-facts{grid-template-columns:repeat(4,minmax(0,1fr))}
+body .company-facts li,body .company-awards p{font-size:16px;line-height:1.8;color:#111827}
+body .difference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+body .difference-grid h3{font-size:24px;line-height:1.7;text-wrap:balance}
+body .comparison-table small,body .price-detail .price-note,body .price-detail .price-label,body .fineprint{font-size:14px!important;color:#111827;line-height:1.8}
+body .price-detail .price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;font-size:16px!important;color:#111827!important}
+body .price small{font-size:16px;color:#111827;margin:0}
+body .footer-main>div>p,body .footer-main>div>strong,body .footer-links a,body .footer nav a,body .footer p,body .phone-panel p,body .phone-panel a,body .success-detail p,body .success-links a{color:#111827;font-size:16px}
+body .footer-main{padding-bottom:40px}
+body .field input,body .field textarea,body .field select{font-size:16px!important}
+body .field input::placeholder,body .field textarea::placeholder{color:#111827;opacity:1}
+body .field label,body .consent,body .required-note,body .form-hero p,body .form-side p,body .intro-block p,body .contact-intro p,body .trial-info p{font-size:16px;color:#111827;line-height:1.8}
+body .req,body .optional,body .guide-badge small,body .stepper li,body .review-table dt,body .review-table dd,body .receipt span,body .form-footnote{font-size:14px;color:#111827}
+body .guide-badge{color:#111827}
+body .button,body .action,body .text-link,body .demo-link,body .demo-trial-action,body .live-demo-sample,body .menu-toggle{font-size:16px}
+body .footer-copy,body .cta-small{font-size:14px;color:#111827}
+@media(max-width:1200px){
+  body .header{min-height:80px;flex-wrap:nowrap;gap:16px;padding-block:12px}
+  body .header .brand img{width:clamp(148px,28vw,200px);height:auto}
+  body .header .menu-toggle{display:flex;align-items:center;gap:10px;border:0;background:transparent;color:var(--ink);flex:none;min-height:44px;white-space:nowrap}
+  body .header nav{display:none;position:absolute;left:0;right:0;top:100%;width:auto;padding:25px 30px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 10px 20px #172a3310;flex-direction:column;align-items:stretch;gap:10px;max-height:calc(100dvh - var(--site-header-height,80px));overflow-y:auto;overscroll-behavior:contain;flex-wrap:nowrap;justify-content:flex-start}
+  body .header nav.open{display:flex}
+  body .header nav>a{flex-shrink:0}
+  body .header nav .button{white-space:normal;line-height:1.6;justify-content:space-between;gap:12px}
+}
+@media(max-width:1000px){body .live-demo-intro{grid-template-columns:1fr;gap:32px}body .live-demo-copy{max-width:640px}body .standard-journey{grid-template-columns:1fr;gap:24px}body .standard-direction{transform:rotate(90deg)}body .standard-source>img{max-width:none}body .company-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){body .hero .hero-lead{font-size:16px}body .live-demo-intro{padding:24px 20px}body .standard-outcome{grid-template-columns:1fr;padding:24px 20px;gap:24px}body .difference-grid{grid-template-columns:1fr;gap:28px}body .trust-grid>div{grid-template-columns:1fr;gap:12px}body .trust-grid strong{grid-row:auto;font-size:40px}body .trust-grid .adoption-status{font-size:30px}body .trust-grid>div:nth-child(2){border-top:0}body .standard-stage-title{align-items:flex-start}body .standard-stage-title h3{font-size:22px}body .mobile-cta a,body .mobile-cta a+a{font-size:16px!important}body .mobile-cta{gap:6px}body .company-facts{grid-template-columns:1fr}body .trial-info{display:block}body .trial-info p+p{margin-top:12px}}
+@media(max-width:400px){body .mobile-cta a,body .mobile-cta a+a{font-size:16px!important;white-space:normal;text-align:center;line-height:1.5;justify-content:center}body .form-header{flex-wrap:wrap;height:auto;padding-block:14px;gap:16px}body .form-header .brand img{height:28px}}
+@media(max-width:400px){body .header nav{padding-inline:20px}body .header nav .button{padding-inline:12px;gap:8px}}

@@ -11,6 +11,7 @@
     $("#demoResumeBadge").hidden = false;
     $("#demoResumeBadge").textContent = latestState?.processing ? "AI解析を続けています" : "前回開いたデモに戻れます";
     $("#demoActionLabel").textContent = latestState?.processing ? "解析の進み具合を確認する" : "作成・編集の続きを開く";
+    $("#demoActionHint").hidden = false;
     $("#demoActionHint").textContent = "このページを開いている間、入力・編集内容は保持されます。";
   }
   function showError() {

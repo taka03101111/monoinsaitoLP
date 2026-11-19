@@ -21,10 +21,10 @@
   }
   if (config?.demoMode === 'sample') {
     document.getElementById('demoActionLabel').textContent = 'サンプルで編集を体験する';
-    document.getElementById('demoActionHint').textContent = '字幕・表示時間・手順を編集し、PDFに保存できます。';
+    document.getElementById('demoActionHint').hidden = true;
     document.getElementById('openLiveSample').hidden = true;
     document.querySelector('.live-demo-copy>h3').innerHTML = '動画マニュアルの<br>編集を、体験。';
-    document.querySelector('.live-demo-copy>p').textContent = '現在はサンプルで編集機能をお試しいただけます。自分の動画のAI解析は準備中です。';
+    document.querySelector('.live-demo-copy>p').textContent = '現在はサンプルで編集機能をお試しいただけます。自分の動画のAI解析は準備中です。字幕・表示時間・手順を編集し、PDFに保存できます。';
     document.querySelector('.live-demo-tags').innerHTML = '<span>字幕・手順を編集</span><span>PDF保存</span><span>サンプルは何度でも</span>';
     document.querySelector('.live-demo-bottom>span').textContent = 'サンプル編集 / AI解析は準備中';
     document.querySelector('.demo-link').innerHTML = '<span class="play-small">▶</span> サンプルでデモを試す';
